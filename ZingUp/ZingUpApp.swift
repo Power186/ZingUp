@@ -11,7 +11,11 @@ import SwiftUI
 struct ZingUpApp: App {
     var body: some Scene {
         WindowGroup {
-            MeetingView()
+            NavigationView {
+                StandUpsView(scrums: DailyStandUp.data)
+            }
+            
         }
+        
     }
 }

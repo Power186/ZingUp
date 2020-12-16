@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D228EC46258A050B0036D007 /* StandUpsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228EC45258A050B0036D007 /* StandUpsView.swift */; };
+		D24C3C1B258A1474007BECAB /* StandUpDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C3C1A258A1474007BECAB /* StandUpDetailView.swift */; };
+		D24E4CD72589E64E007C8BEE /* DailyStandUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E4CD62589E64E007C8BEE /* DailyStandUp.swift */; };
+		D24E4CDE2589E866007C8BEE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E4CDD2589E866007C8BEE /* CardView.swift */; };
 		D2A9FF762589DC71008BD7AF /* ZingUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A9FF752589DC71008BD7AF /* ZingUpApp.swift */; };
 		D2A9FF782589DC71008BD7AF /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A9FF772589DC71008BD7AF /* MeetingView.swift */; };
 		D2A9FF7A2589DC72008BD7AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A9FF792589DC72008BD7AF /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D228EC45258A050B0036D007 /* StandUpsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandUpsView.swift; sourceTree = "<group>"; };
+		D24C3C1A258A1474007BECAB /* StandUpDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandUpDetailView.swift; sourceTree = "<group>"; };
+		D24E4CD62589E64E007C8BEE /* DailyStandUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStandUp.swift; sourceTree = "<group>"; };
+		D24E4CDD2589E866007C8BEE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D2A9FF722589DC71008BD7AF /* ZingUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZingUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A9FF752589DC71008BD7AF /* ZingUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZingUpApp.swift; sourceTree = "<group>"; };
 		D2A9FF772589DC71008BD7AF /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -57,6 +65,10 @@
 				D2A9FF792589DC72008BD7AF /* Assets.xcassets */,
 				D2A9FF7E2589DC72008BD7AF /* Info.plist */,
 				D2A9FF7B2589DC72008BD7AF /* Preview Content */,
+				D24E4CD62589E64E007C8BEE /* DailyStandUp.swift */,
+				D24E4CDD2589E866007C8BEE /* CardView.swift */,
+				D228EC45258A050B0036D007 /* StandUpsView.swift */,
+				D24C3C1A258A1474007BECAB /* StandUpDetailView.swift */,
 			);
 			path = ZingUp;
 			sourceTree = "<group>";
@@ -139,6 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A9FF782589DC71008BD7AF /* MeetingView.swift in Sources */,
+				D228EC46258A050B0036D007 /* StandUpsView.swift in Sources */,
+				D24E4CD72589E64E007C8BEE /* DailyStandUp.swift in Sources */,
+				D24C3C1B258A1474007BECAB /* StandUpDetailView.swift in Sources */,
+				D24E4CDE2589E866007C8BEE /* CardView.swift in Sources */,
 				D2A9FF762589DC71008BD7AF /* ZingUpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
