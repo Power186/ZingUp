@@ -32,5 +32,17 @@ extension DailyStandUp {
             DailyStandUp(title: "Web Dev", attendees: ["Chella", "Chris", "Christina", "Eden", "Carla", "Chad", "Jen", "Sarah"], lengthInMinutes: 5, color: Color("Web Dev"))
         ]
     }
+}
+
+extension DailyStandUp {
+    struct Data {
+        var title: String = ""
+        var attendees: [String] = []
+        var lengthInMinutes: Double = 5.0
+        var color: Color = .primary
+    }
     
+    var data: Data {
+        return Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), color: color)
+    }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StandUpDetailView: View {
     let scrum: DailyStandUp
+    @State private var isPresented = false
     
     var body: some View {
         List {
@@ -45,7 +46,21 @@ struct StandUpDetailView: View {
             
         }
         .listStyle(InsetGroupedListStyle())
+        .navigationBarItems(trailing: Button("Edit") {
+            isPresented = true
+        })
         .navigationTitle(scrum.title)
+        .fullScreenCover(isPresented: $isPresented, content: {
+            NavigationView {
+                EditView()
+                    .navigationTitle(scrum.title)
+                    .navigationBarItems(leading: Button("Cancel") {
+                        isPresented = false
+                    }, trailing: Button("Done") {
+                      isPresented = false
+                    })
+            }
+        })
     }
 }
 
