@@ -23,6 +23,7 @@
 		D2B3BAE2258B4F1E00ACC221 /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3BAE1258B4F1E00ACC221 /* MeetingHeaderView.swift */; };
 		D2E0763B258B6F9B005770C4 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0763A258B6F9B005770C4 /* AVPlayer+Ding.swift */; };
 		D2E0763E258B6FD7005770C4 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = D2E0763D258B6FD7005770C4 /* ding.wav */; };
+		D2EB3E87258B959A000A04B6 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EB3E86258B959A000A04B6 /* History.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		D2B3BAE1258B4F1E00ACC221 /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 		D2E0763A258B6F9B005770C4 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		D2E0763D258B6FD7005770C4 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		D2EB3E86258B959A000A04B6 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				D266D1E6258B662B003764AD /* MeetingFooterView.swift */,
 				D2E0763A258B6F9B005770C4 /* AVPlayer+Ding.swift */,
 				D2E07640258B6FE9005770C4 /* Resources */,
+				D2EB3E86258B959A000A04B6 /* History.swift */,
 			);
 			path = ZingUp;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				D2A9FF782589DC71008BD7AF /* MeetingView.swift in Sources */,
 				D228EC46258A050B0036D007 /* StandUpsView.swift in Sources */,
+				D2EB3E87258B959A000A04B6 /* History.swift in Sources */,
 				D24E4CD72589E64E007C8BEE /* DailyStandUp.swift in Sources */,
 				D2E0763B258B6F9B005770C4 /* AVPlayer+Ding.swift in Sources */,
 				D24C3C1B258A1474007BECAB /* StandUpDetailView.swift in Sources */,

@@ -45,6 +45,19 @@ struct StandUpDetailView: View {
                 }
             }
             
+            Section(header: Text("History")) {
+                if scrum.history.isEmpty {
+                    Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
+                }
+                
+                ForEach(scrum.history) { history in
+                    HStack {
+                        Image(systemName: "calendar")
+                        Text(history.date, style: .date)
+                    }
+                }
+            }
+            
         }
         .listStyle(InsetGroupedListStyle())
         .navigationBarItems(trailing: Button("Edit") {
@@ -58,8 +71,8 @@ struct StandUpDetailView: View {
                     .navigationBarItems(leading: Button("Cancel") {
                         isPresented = false
                     }, trailing: Button("Done") {
-                      isPresented = false
-                      scrum.update(from: data)
+                        isPresented = false
+                        scrum.update(from: data)
                     })
             }
         })
