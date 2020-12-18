@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DailyStandUp: Identifiable {
+struct DailyStandUp: Identifiable, Codable {
     let id: UUID
     var title: String
     var attendees: [String]

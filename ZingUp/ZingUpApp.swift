@@ -9,14 +9,18 @@ import SwiftUI
 
 @main
 struct ZingUpApp: App {
-    @State private var scrums = DailyStandUp.data
+    @ObservedObject private var data = ScrumData()
     
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                StandUpsView(scrums: $scrums)
+                StandUpsView(scrums: $data.scrums) {
+                    data.save()
+                }
             }
-            
+            .onAppear(perform: {
+                data.load()
+            })
         }
         
     }

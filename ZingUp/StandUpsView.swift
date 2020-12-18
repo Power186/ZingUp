@@ -9,8 +9,11 @@ import SwiftUI
 
 struct StandUpsView: View {
     @Binding var scrums: [DailyStandUp]
+    @Environment(\.scenePhase) private var scenePhase
     @State private var isPresented = false
     @State private var newScrumData = DailyStandUp.Data()
+    
+    let saveAction: () -> Void
     
     var body: some View {
         List {
@@ -42,6 +45,9 @@ struct StandUpsView: View {
                     })
             }
         })
+        .onChange(of: scenePhase, perform: { phase in
+            if phase == .inactive { saveAction() }
+        })
         .listStyle(InsetListStyle())
         
     }
@@ -58,7 +64,7 @@ struct StandUpsView: View {
 struct StandUpsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            StandUpsView(scrums: .constant(DailyStandUp.data))
+            StandUpsView(scrums: .constant(DailyStandUp.data), saveAction: {})
         }
     }
 }

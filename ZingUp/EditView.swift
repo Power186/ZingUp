@@ -29,7 +29,7 @@ struct EditView: View {
                     .accessibilityLabel(Text("Color picker"))
             }
             
-            Section(header: Text("Attendies")) {
+            Section(header: Text("Attendees")) {
                 ForEach(scrumData.attendees, id: \.self) { attendee in
                     Text(attendee)
                 }
@@ -39,10 +39,9 @@ struct EditView: View {
                 HStack {
                     TextField("New Attendee", text: $newAttendee)
                     Button(action: {
-                        withAnimation {
-                            scrumData.attendees.append(newAttendee)
-                            newAttendee = ""
-                        }
+                        scrumData.attendees.append(newAttendee)
+                        newAttendee = ""
+
                     }) {
                         Image(systemName: "plus.circle.fill")
                             .accessibilityLabel(Text("Add attendee"))
