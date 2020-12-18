@@ -51,9 +51,11 @@ struct StandUpDetailView: View {
                 }
                 
                 ForEach(scrum.history) { history in
-                    HStack {
-                        Image(systemName: "calendar")
-                        Text(history.date, style: .date)
+                    NavigationLink(destination: HistoryView(history: history)) {
+                        HStack {
+                            Image(systemName: "calendar")
+                            Text(history.date, style: .date)
+                        }
                     }
                 }
             }

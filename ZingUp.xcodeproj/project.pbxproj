@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20EB7CD258C9B08000D2636 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20EB7CC258C9B08000D2636 /* SpeechRecognizer.swift */; };
+		D20EB7D1258C9FA9000D2636 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20EB7D0258C9FA9000D2636 /* HistoryView.swift */; };
 		D228EC46258A050B0036D007 /* StandUpsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D228EC45258A050B0036D007 /* StandUpsView.swift */; };
 		D24C3C1B258A1474007BECAB /* StandUpDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C3C1A258A1474007BECAB /* StandUpDetailView.swift */; };
 		D24E4CD72589E64E007C8BEE /* DailyStandUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E4CD62589E64E007C8BEE /* DailyStandUp.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D20EB7CC258C9B08000D2636 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		D20EB7D0258C9FA9000D2636 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		D228EC45258A050B0036D007 /* StandUpsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandUpsView.swift; sourceTree = "<group>"; };
 		D24C3C1A258A1474007BECAB /* StandUpDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandUpDetailView.swift; sourceTree = "<group>"; };
 		D24E4CD62589E64E007C8BEE /* DailyStandUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStandUp.swift; sourceTree = "<group>"; };
@@ -93,10 +97,9 @@
 				D2A9FF772589DC71008BD7AF /* MeetingView.swift */,
 				D2C5809D258C7DFA00C94945 /* MeetingTimerView.swift */,
 				D2B3BAE1258B4F1E00ACC221 /* MeetingHeaderView.swift */,
-				D266D1DD258B5F50003764AD /* Color+Codable.swift */,
 				D266D1E0258B6050003764AD /* ScrumProgressViewStyle.swift */,
 				D266D1E6258B662B003764AD /* MeetingFooterView.swift */,
-				D2E0763A258B6F9B005770C4 /* AVPlayer+Ding.swift */,
+				D20EB7D0258C9FA9000D2636 /* HistoryView.swift */,
 				D2C58099258C73C600C94945 /* Models */,
 				D2E07640258B6FE9005770C4 /* Resources */,
 			);
@@ -114,10 +117,13 @@
 		D2C58099258C73C600C94945 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D2E0763A258B6F9B005770C4 /* AVPlayer+Ding.swift */,
+				D266D1DD258B5F50003764AD /* Color+Codable.swift */,
 				D24E4CD62589E64E007C8BEE /* DailyStandUp.swift */,
 				D266D1E3258B6380003764AD /* ScrumTimer.swift */,
 				D2EB3E86258B959A000A04B6 /* History.swift */,
 				D2C5809A258C741600C94945 /* ScrumData.swift */,
+				D20EB7CC258C9B08000D2636 /* SpeechRecognizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,9 +209,11 @@
 				D2A9FF782589DC71008BD7AF /* MeetingView.swift in Sources */,
 				D228EC46258A050B0036D007 /* StandUpsView.swift in Sources */,
 				D2EB3E87258B959A000A04B6 /* History.swift in Sources */,
+				D20EB7CD258C9B08000D2636 /* SpeechRecognizer.swift in Sources */,
 				D24E4CD72589E64E007C8BEE /* DailyStandUp.swift in Sources */,
 				D2E0763B258B6F9B005770C4 /* AVPlayer+Ding.swift in Sources */,
 				D2C5809B258C741600C94945 /* ScrumData.swift in Sources */,
+				D20EB7D1258C9FA9000D2636 /* HistoryView.swift in Sources */,
 				D2C5809E258C7DFA00C94945 /* MeetingTimerView.swift in Sources */,
 				D24C3C1B258A1474007BECAB /* StandUpDetailView.swift in Sources */,
 				D26C543B258A3D7A00FB63D0 /* EditView.swift in Sources */,
