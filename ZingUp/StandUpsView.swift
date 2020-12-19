@@ -28,13 +28,13 @@ struct StandUpsView: View {
         .navigationBarItems(trailing: Button(action: {
             isPresented = true
         }) {
-            Text("Add")
             Image(systemName: "plus")
+            Text("Add")
         })
         .sheet(isPresented: $isPresented, content: {
             NavigationView {
                 EditView(scrumData: $newScrumData)
-                    .navigationBarItems(leading: Button("Dismiss") {
+                    .navigationBarItems(leading: Button("Cancel") {
                         isPresented = false
                         
                     }, trailing: Button("Add") {
@@ -48,7 +48,7 @@ struct StandUpsView: View {
         .onChange(of: scenePhase, perform: { phase in
             if phase == .inactive { saveAction() }
         })
-        .listStyle(InsetListStyle())
+        .listStyle(InsetGroupedListStyle())
         
     }
     

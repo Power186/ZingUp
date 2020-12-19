@@ -25,6 +25,7 @@
 		D2B3BAE2258B4F1E00ACC221 /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B3BAE1258B4F1E00ACC221 /* MeetingHeaderView.swift */; };
 		D2C5809B258C741600C94945 /* ScrumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C5809A258C741600C94945 /* ScrumData.swift */; };
 		D2C5809E258C7DFA00C94945 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C5809D258C7DFA00C94945 /* MeetingTimerView.swift */; };
+		D2D7DDBD258DBA1900BB668C /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7DDBC258DBA1900BB668C /* EventView.swift */; };
 		D2E0763B258B6F9B005770C4 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0763A258B6F9B005770C4 /* AVPlayer+Ding.swift */; };
 		D2E0763E258B6FD7005770C4 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = D2E0763D258B6FD7005770C4 /* ding.wav */; };
 		D2EB3E87258B959A000A04B6 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EB3E86258B959A000A04B6 /* History.swift */; };
@@ -51,6 +52,7 @@
 		D2B3BAE1258B4F1E00ACC221 /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 		D2C5809A258C741600C94945 /* ScrumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumData.swift; sourceTree = "<group>"; };
 		D2C5809D258C7DFA00C94945 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		D2D7DDBC258DBA1900BB668C /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		D2E0763A258B6F9B005770C4 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		D2E0763D258B6FD7005770C4 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		D2EB3E86258B959A000A04B6 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				D266D1E0258B6050003764AD /* ScrumProgressViewStyle.swift */,
 				D266D1E6258B662B003764AD /* MeetingFooterView.swift */,
 				D20EB7D0258C9FA9000D2636 /* HistoryView.swift */,
+				D2D7DDBC258DBA1900BB668C /* EventView.swift */,
 				D2C58099258C73C600C94945 /* Models */,
 				D2E07640258B6FE9005770C4 /* Resources */,
 			);
@@ -152,6 +155,8 @@
 			dependencies = (
 			);
 			name = ZingUp;
+			packageProductDependencies = (
+			);
 			productName = ZingUp;
 			productReference = D2A9FF722589DC71008BD7AF /* ZingUp.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +184,8 @@
 				Base,
 			);
 			mainGroup = D2A9FF692589DC71008BD7AF;
+			packageReferences = (
+			);
 			productRefGroup = D2A9FF732589DC71008BD7AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,6 +217,7 @@
 				D228EC46258A050B0036D007 /* StandUpsView.swift in Sources */,
 				D2EB3E87258B959A000A04B6 /* History.swift in Sources */,
 				D20EB7CD258C9B08000D2636 /* SpeechRecognizer.swift in Sources */,
+				D2D7DDBD258DBA1900BB668C /* EventView.swift in Sources */,
 				D24E4CD72589E64E007C8BEE /* DailyStandUp.swift in Sources */,
 				D2E0763B258B6F9B005770C4 /* AVPlayer+Ding.swift in Sources */,
 				D2C5809B258C741600C94945 /* ScrumData.swift in Sources */,

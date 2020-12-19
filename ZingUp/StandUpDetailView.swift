@@ -45,6 +45,13 @@ struct StandUpDetailView: View {
                 }
             }
             
+            Section(header: Text("Event")) {
+                NavigationLink(destination: EventView(scrum: $scrum)) {
+                    Label("Schedule - Share", systemImage: "paperplane")
+                        .accessibilityLabel(Text("Schedule and share this meeting"))
+                }
+            }
+            
             Section(header: Text("History")) {
                 if scrum.history.isEmpty {
                     Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
